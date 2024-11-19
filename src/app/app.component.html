@@ -1,2 +1,18 @@
-<h1 class="fw-bold">Nombre: Steven Nouel</h1>
-<a href="https://github.com/snouel/GalleryAppITLAv"> Ir a repositorio del proyecto en GitHub</a>
+<div class="container mt-4">
+    <h1 class="font-weight-bold mb-5">Microsoft Windows Background Gallery Center</h1>
+    <div class="row">
+        @for(image of images; track images){
+      <div class="col-sm-12 col-md-6 col-lg-3" >
+        <div class="card mb-4">
+          <img
+            [src]= image
+            alt="Background of Windows OS"
+            class="card-img-top img-fluid"
+            style="object-fit: cover; height: 200px;"
+          />
+        </div>
+      </div>
+    }
+    </div>
+  </div>
+  
